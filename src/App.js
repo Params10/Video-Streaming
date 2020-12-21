@@ -45,6 +45,7 @@ class App extends React.Component {
       var i = 0;
       var mov = [];
       if (!this.state.fetched) {
+        console.log("entered");
         axios.get("http://35.192.24.74/api/search/explore").then(
           result => {
             this.setState({
